@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".sembunyi").click(function(){ $("#foto").hide("slow")});
+			$(".tampil").click(function(){ $("#foto").show("slow")});
+
+			$(".sembunyikan").click(function(){ $("#gambar").hide("slow")});
+			$(".tampilkan").click(function(){ $("#gambar").show("slow")});
+
+			$(".hide").click(function(){ $("#gbr").hide("slow")});
+			$(".show").click(function(){ $("#gbr").show("slow")});
+		});
+
+	</script>
+</head>
+
+<body>
+<button class="sembunyi">hide</button>
+<button class="tampil">show</button>
+<p><img id="foto" src="st.png"></p>
+
+<button class="sembunyikan">hide</button>
+<button class="tampilkan">show</button>
+<p><img id="gambar" src="dr.png"></p>
+
+<button class="hide">hide</button>
+<button class="show">show</button>
+<p><img id="gbr" src="sp.png"></p>
+</body>
+</html>
